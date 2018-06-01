@@ -18,6 +18,44 @@
   </div>
 
   <div class="row">
+    <div class="col-md-4">
+      <div class="iconic-w-horizontal w_bg_deep_orange light-text">
+        <a href="#" class="ico-block">
+          <span><i class="ico-users"></i></span>
+        </a>
+        <div class="w-meta-info number-rotate">
+          <span class="w-meta-value number-animate">
+            <%= number_to_currency(@politic.declared_goods.pluck(:value).sum, locale: 'pt-BR') %>
+          </span>
+          <span class="w-meta-title">Bens declarados</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="iconic-w-horizontal w_bg_green light-text">
+        <a href="#" class="ico-block">
+          <span><i class="ico-chart"></i></span>
+        </a>
+        <div class="w-meta-info">
+          <span class="w-meta-value number-animate" data-value="20686" data-animation-duration="1500">20,686</span>
+          <span class="w-meta-title">New Vistitors</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="iconic-w-horizontal w_bg_blue_grey light-text">
+        <a href="#" class="ico-block">
+          <span><i class="fa fa-mobile fa-2x"></i></span>
+        </a>
+        <div class="w-meta-info">
+          <span class="w-meta-value number-animate" data-value="4500" data-animation-duration="1500">4,500</span>
+          <span class="w-meta-title">SMS Sent</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="box-widget widget-module">
       <div class="widget-head clearfix">
         <span class="h-icon">
