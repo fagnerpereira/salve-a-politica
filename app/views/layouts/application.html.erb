@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>SalveAPolitica</title>
+      <%= csrf_meta_tags %>
+      <%= stylesheet_link_tag "css/font-awesome.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/bootstrap.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/animate.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/waves.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/layout.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/components.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/plugins.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/common-styles.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/pages.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/responsive.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "css/matmix-iconfont.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag "politics.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+
+      <%= javascript_include_tag 'application.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/jquery.loadmask.js', 'data-turbolinks-track': 'reload' %>
+   </head>
+   <body>
+      <div class="bb-alert alert alert-success noty_animated fadeInUp">
+         <span>Table Callback Demo Content</span>
+      </div>
+      <div class="page-container list-menu-view">
+         <!--Leftbar Start Here -->
+         <div class="left-aside desktop-view">
+            <div class="aside-branding">
+              <a href="index.html" class="iconic-logo">
+                <%= image_tag 'logo-iconic.png' %>
+              </a>
+              <a href="index.html" class="large-logo">
+                <%= image_tag 'logo-large.png' %>
+              </a>
+                <span class="aside-pin waves-effect">
+                  <i class="fa fa-thumb-tack"></i>
+                </span>
+              <span class="aside-close waves-effect"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="left-navigation">
+               <ul class="list-accordion">
+                  <li>
+                     <a href="#" class="waves-effect">
+                      <span class="nav-icon">
+                        <i class="fa fa-align-justify"></i>
+                      </span>
+                      <span class="nav-label">Form Elements</span>
+                    </a>
+                    <ul>
+                      <li><a href="basic-forms.html">Basic Form Elements</a>
+                      </li>
+                    </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="page-content">
+            <header class="top-bar">
+               <div class="container-fluid top-nav">
+                  <div class="search-form search-bar">
+                     <form>
+                        <input name="searchbox" value="" placeholder="Search Topic..." class="search-input">
+                     </form>
+                     <span class="search-close waves-effect">
+                      <i class="ico-cross"></i>
+                    </span>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-2">
+                        <div class="clearfix top-bar-action">
+                           <span class="leftbar-action-mobile waves-effect"><i class="fa fa-bars "></i></span>
+                           <span class="leftbar-action desktop waves-effect"><i class="fa fa-bars "></i></span>
+                           <span class="waves-effect search-btn mobile-search-btn">
+                           <i class="fa fa-search"></i>
+                           </span>
+                           <span class="rightbar-action waves-effect"><i class="fa fa-bars"></i></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <div class="main-container">
+               <%= yield %>
+            </div>
+         </div>
+      </div>
+
+      <%= javascript_include_tag 'js/jquery-1.11.2.min.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/jquery-migrate-1.2.1.min.js', 'data-turbolinks-track': 'reload' %>
+      <!--Load Mask-->
+      <%= javascript_include_tag 'js/jquery.loadmask.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/jRespond.min.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/bootstrap.min.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/nav-accordion.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/hoverintent.js', 'data-turbolinks-track': 'reload' %>
+      <!--Materialize Effect-->
+      <%= javascript_include_tag 'js/waves.js', 'data-turbolinks-track': 'reload' %>
+      <!--iCheck-->
+      <%= javascript_include_tag 'js/icheck.js', 'data-turbolinks-track': 'reload' %>
+      <!--Select2-->
+      <%= javascript_include_tag 'js/select2.js', 'data-turbolinks-track': 'reload' %>
+      <!--jquery.mentionsInput-->
+      <%= javascript_include_tag 'js/underscore.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/jquery.elastic.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/jquery.events.input.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/jquery.mentionsInput.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/bootstrap-filestyle.js', 'data-turbolinks-track': 'reload' %>
+      <!--Text Editor-->
+      <%= javascript_include_tag 'js/summernote.min.js', 'data-turbolinks-track': 'reload' %>
+      <!--CHARTS-->
+      <%= javascript_include_tag 'js/chart/sparkline/jquery.sparkline.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/chart/easypie/jquery.easypiechart.min.js', 'data-turbolinks-track': 'reload' %>
+      <!--Smart Resize-->
+      <%= javascript_include_tag 'js/smart-resize.js', 'data-turbolinks-track': 'reload' %>
+      <!--Data Tables-->
+      <%= javascript_include_tag 'js/jquery.dataTables.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/dataTables.responsive.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/dataTables.tableTools.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/dataTables.bootstrap.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/stacktable.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/bootbox.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'js/sweetalert.js', 'data-turbolinks-track': 'reload' %>
+      <!--Layout Initialize-->
+      <%= javascript_include_tag 'js/layout.init.js', 'data-turbolinks-track': 'reload' %>
+      <!--Template Plugins Initialize-->
+      <%= javascript_include_tag 'js/matmix.init.js', 'data-turbolinks-track': 'reload' %>
+      <!--High Resolution Ready-->
+      <%= javascript_include_tag 'js/retina.min.js', 'data-turbolinks-track': 'reload' %>
+   </body>
+</html>

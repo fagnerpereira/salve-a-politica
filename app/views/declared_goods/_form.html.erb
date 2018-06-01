@@ -1,0 +1,17 @@
+<%= form_with(model: declared_good, local: true) do |form| %>
+  <% if declared_good.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(declared_good.errors.count, "error") %> prohibited this declared_good from being saved:</h2>
+
+      <ul>
+      <% declared_good.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

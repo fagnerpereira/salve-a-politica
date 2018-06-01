@@ -1,0 +1,17 @@
+<%= form_with(model: judicial_process, local: true) do |form| %>
+  <% if judicial_process.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(judicial_process.errors.count, "error") %> prohibited this judicial_process from being saved:</h2>
+
+      <ul>
+      <% judicial_process.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

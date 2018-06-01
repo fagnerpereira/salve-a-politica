@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post: MyString
+  started_at: 2018-05-27
+  ended_at: 2018-05-27
+  completed: false
+  politic_id: 1
+
+two:
+  post: MyString
+  started_at: 2018-05-27
+  ended_at: 2018-05-27
+  completed: false
+  politic_id: 1

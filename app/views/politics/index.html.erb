@@ -1,0 +1,112 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box-widget widget-module">
+        <div class="widget-container">
+          <div class="widget-block">
+            <div class="table-responsive">
+              <table class="table table-hover table-bordered matmix-dt bg-hc-border">
+                <thead>
+                  <tr>
+                    <th colspan="7">
+                      <div class="dt-col-header">Políticos</div>
+                      <p>
+                        This is a example of a complex header table you can use this syle in any kind of table.
+                      </p>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="tc-center">
+                    </th>
+                    <th>
+                      Nome
+                    </th>
+                    <th>
+                      Idade
+                    </th>
+                    <th class="tc-center">
+                      Estado
+                    </th>
+                    <th class="tc-center">
+                      Cidade
+                    </th>
+                    <th class="tc-center">
+                      Partido
+                    </th>
+                    <th class="tc-center">
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @politics.each do |politic| %>
+                    <tr>
+                      <td class="tc-center">
+                        <%= link_to politic_path(politic), class: "user-td-thumb" do %>
+                          <img src="images/avatar/adellecharles.jpg" alt="user">
+                        <% end %>
+                      </td>
+                      <td>
+                        <%= politic.name %>
+                      </td>
+                      <td>
+                        <%= politic.age %>
+                      </td>
+                      <td class="tc-center">
+                        <%= politic.state %>
+                      </td>
+                      <td class="tc-center">
+                        <%= politic.city %>
+                      </td>
+                      <td class="tc-center">
+                        <%= politic.part %>
+                      </td>
+                      <td class="tc-center">
+                        <div class="btn-toolbar" role="toolbar">
+                          <div class="btn-group" role="group">
+                            <a href="#" class="btn btn-default btn-sm m-user-edit">Edit</a>
+                            <a href="#" class="btn btn-default btn-sm m-user-delete">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+          </div>
+          <div class="dt-pagination">
+            <nav>
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">Prev</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#">4</a>
+                </li>
+                <li>
+                  <a href="#">5</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

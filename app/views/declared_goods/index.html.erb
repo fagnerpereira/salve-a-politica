@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Declared Goods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @declared_goods.each do |declared_good| %>
+      <tr>
+        <td><%= link_to 'Show', declared_good %></td>
+        <td><%= link_to 'Edit', edit_declared_good_path(declared_good) %></td>
+        <td><%= link_to 'Destroy', declared_good, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Declared Good', new_declared_good_path %>

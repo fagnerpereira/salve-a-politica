@@ -1,0 +1,80 @@
+<div class="container-fluid">
+  <div class="forum-header">
+    <div class="row">
+      <div class="col-md-8">
+        <div>
+          <label class="label label-success">
+            <%= @politic.part %>
+          </label>
+        </div>
+        <h2 class="forum-title"><%= @politic.name %></h2>
+        <p class="forum-sub-title">
+          <span class="topic-meta">
+            Candidato a presidência da republica
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="box-widget widget-module">
+      <div class="widget-head clearfix">
+        <span class="h-icon">
+          <i class="fa fa-th"></i>
+        </span>
+        <h4>Declaração de bens</h4>
+        <ul class="widget-action-bar pull-right">
+          <li>
+              <span class="widget-collapse waves-effect w-collapse"><i class="fa fa-angle-down"></i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="widget-container">
+        <div class=" widget-block">
+          <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="td-content">
+                  <table class="table table-hover table-bordered matmix-dt bg-hc-border">
+                    <thead>
+                      <tr>
+                        <th colspan="7">
+                          <p>
+                            Fontes: ****
+                          </p>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          Descrição
+                        </th>
+                        <th>
+                          Valor
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% @politic.declared_goods.each do |declared_good| %>
+                        <tr>
+                          <td>
+                            <%= declared_good.description %>
+                          </td>
+                          <td>
+                            <span id="money-mask">
+                              <%= number_to_currency(declared_good.value, locale: 'pt-BR') %>
+                            </span>
+                          </td>
+                        </tr>
+                      <% end %>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
